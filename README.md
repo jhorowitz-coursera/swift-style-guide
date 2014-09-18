@@ -56,8 +56,8 @@ Example:
 
 ```swift
 if let unwrapped = optional {
-	  unwrapped statement 1;
-	  unwrapped statement 2;
+    unwrapped statement 1;
+    unwrapped statement 2;
 }
 
 optional?.optionalFunction()  // evaluates to nil if optional is not present
@@ -130,7 +130,7 @@ class NewClass: NSObject {
     override func observeValueForKeyPath(keyPath: String!, ofObject object: AnyObject!, change: [NSObject : AnyObject]!, context: UnsafeMutablePointer<Void>) {
         if context != &newClassKVOContext {
             super.observeValueForKeyPath(keyPath, ofObject: object, change: change, context: context)
-						return
+            return
         }
 
         switch keyPath {
